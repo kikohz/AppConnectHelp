@@ -15,23 +15,23 @@ class MasterViewController: NSViewController {
         // Do view setup here.
     }
     @IBOutlet weak var keyPath: NSTextField!
-    
     @IBOutlet weak var tokenTf: NSTextField!
+    @IBOutlet weak var issTf: NSTextField!
+    @IBOutlet weak var kidTf: NSTextField!
     
-
     @IBOutlet var apiInfoTextView: NSTextView!
     @IBOutlet weak var urlTf: NSTextField!
     @IBAction func generateToken(_ sender: Any) {
-        if keyPath.stringValue.count > 0 {
+        if keyPath.stringValue.count > 0, issTf.stringValue.count > 0 ,kidTf.stringValue.count > 0 {
             let jwphelp = JWTTokensHelp()
-            self.tokenTf.stringValue = jwphelp.generate(path: keyPath.stringValue)
+            self.tokenTf.stringValue = jwphelp.generate(path: keyPath.stringValue, iss: issTf.stringValue,kid: kidTf.stringValue)
         }
         else {
             let alert = NSAlert()
             alert.icon = NSImage(named: "error-alert")
             alert.addButton(withTitle: "OK")
-            alert.messageText = "key错误"
-            alert.informativeText = "请您选择正确的文件再试,谢谢"
+            alert.messageText = "基础信息错误"
+            alert.informativeText = "请填写正确的信息，并且选择key文件之后再试,谢谢"
             alert.alertStyle = .informational
             alert.beginSheetModal(for: NSApplication.shared.mainWindow!) { response in
             }
@@ -65,6 +65,9 @@ class MasterViewController: NSViewController {
         }
     }
     
+    @IBAction func openApiView(_ sender: Any) {
+        
+    }
     fileprivate func openFilePanel() {
         let openPanel = NSOpenPanel()
         openPanel.allowedFileTypes = ["p8"]

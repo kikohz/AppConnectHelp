@@ -16,7 +16,7 @@ struct AppConnectClaims: Claims {
 }
 class JWTTokensHelp: NSObject {
 
-    func generate(path: String) -> String {
+    func generate(path: String, iss:String, kid:String) -> String {
         let appClaims = AppConnectClaims(iss: "f66431c2-18fc-405b-9051-28b7e8de8ed7", exp: Date(timeIntervalSinceNow: 1200), aud: "appstoreconnect-v1")
         do {
             let privateKey: Data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)

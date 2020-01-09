@@ -8,7 +8,9 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController" customModule="AppConnectHelp" customModuleProvider="target">
             <connections>
                 <outlet property="apiInfoTextView" destination="4bm-8g-1TI" id="LuX-TJ-6Af"/>
+                <outlet property="issTf" destination="Avc-f6-dj9" id="VcS-mP-qlE"/>
                 <outlet property="keyPath" destination="qQF-kI-9fH" id="MUc-Il-K4F"/>
+                <outlet property="kidTf" destination="sOy-cQ-iNl" id="Mli-D9-sPj"/>
                 <outlet property="tokenTf" destination="8xk-aa-tvR" id="Lnv-U0-lDC"/>
                 <outlet property="urlTf" destination="XGJ-oF-nZw" id="S02-6b-a4t"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
@@ -17,22 +19,22 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="393"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INl-B3-jja">
-                    <rect key="frame" x="14" y="342" width="113" height="32"/>
+                    <rect key="frame" x="14" y="332" width="113" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="选择p8文件" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zGo-QB-YSX">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
                         <action selector="selectKey:" target="-2" id="aIN-Aa-ub9"/>
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-kI-9fH">
-                    <rect key="frame" x="127" y="351" width="226" height="16"/>
+                    <rect key="frame" x="127" y="341" width="263" height="16"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" id="U93-CA-Off">
                         <font key="font" metaFont="label" size="12"/>
@@ -41,18 +43,18 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-gk-Jvk">
-                    <rect key="frame" x="353" y="342" width="113" height="32"/>
+                    <rect key="frame" x="401" y="332" width="113" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="生成token" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Wnu-lw-z2e">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
                         <action selector="generateToken:" target="-2" id="JNP-Xl-7QZ"/>
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8xk-aa-tvR">
-                    <rect key="frame" x="20" y="237" width="440" height="96"/>
+                    <rect key="frame" x="20" y="220" width="488" height="103"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="web token" drawsBackground="YES" id="HRo-AH-dcR">
                         <font key="font" metaFont="system"/>
@@ -61,18 +63,18 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNT-Jo-Ka2">
-                    <rect key="frame" x="392" y="160" width="67" height="32"/>
+                    <rect key="frame" x="447" y="160" width="67" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="请求" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SmU-6C-asq">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
                         <action selector="startTestApi:" target="-2" id="yEl-fI-lfM"/>
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGJ-oF-nZw">
-                    <rect key="frame" x="20" y="167" width="353" height="21"/>
+                    <rect key="frame" x="20" y="167" width="425" height="21"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="https://api.appstoreconnect.apple.com/v1/apps" drawsBackground="YES" id="TGU-fE-mP4">
                         <font key="font" metaFont="system"/>
@@ -84,25 +86,25 @@
                     <rect key="frame" x="20" y="196" width="442" height="16"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="测试Web Token" id="bAn-e9-Mb6">
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="label" size="12"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iy-Vf-T9U">
-                    <rect key="frame" x="20" y="11" width="440" height="136"/>
+                    <rect key="frame" x="20" y="11" width="488" height="136"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="lGz-Lk-W0N">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="136"/>
+                        <rect key="frame" x="0.0" y="0.0" width="488" height="136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="4bm-8g-1TI">
-                                <rect key="frame" x="0.0" y="0.0" width="440" height="136"/>
+                                <rect key="frame" x="0.0" y="0.0" width="488" height="136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <size key="minSize" width="440" height="136"/>
-                                <size key="maxSize" width="440" height="10000000"/>
+                                <size key="minSize" width="488" height="136"/>
+                                <size key="maxSize" width="500" height="10000000"/>
                                 <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             </textView>
                         </subviews>
@@ -112,12 +114,62 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="2dF-EJ-ddC">
-                        <rect key="frame" x="424" y="0.0" width="16" height="136"/>
+                        <rect key="frame" x="472" y="0.0" width="16" height="136"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-f6-dj9">
+                    <rect key="frame" x="20" y="371" width="488" height="21"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="iss" drawsBackground="YES" id="AGu-Lt-9sJ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sOy-cQ-iNl">
+                    <rect key="frame" x="20" y="407" width="178" height="21"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="kid" drawsBackground="YES" id="me6-LD-gft">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBq-Jo-u8c">
+                    <rect key="frame" x="18" y="442" width="261" height="16"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="请先填写基本信息" id="aT2-Fi-AfY">
+                        <font key="font" metaFont="label" size="12"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qw6-Up-v8E">
+                    <rect key="frame" x="18" y="473" width="492" height="16"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="AppConnect JWT" id="VGh-J2-FLt">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-PH-R0P">
+                    <rect key="frame" x="516" y="19" width="84" height="462"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSGoForwardTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="kqf-Rf-wTC">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openApiView:" target="-2" id="0yc-7v-dbY"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="46" y="93.5"/>
+            <point key="canvasLocation" x="105" y="147"/>
         </customView>
     </objects>
+    <resources>
+        <image name="NSGoForwardTemplate" width="9" height="12"/>
+    </resources>
 </document>

@@ -20,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.masterView = MasterViewController(nibName: "MasterViewController", bundle: nil)
         self.window.contentView?.addSubview(self.masterView!.view)
         self.masterView?.view.frame = self.window.contentView!.bounds
+        self.masterView?.view.autoresizingMask = [.width,.height]
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
