@@ -10,10 +10,6 @@ import Cocoa
 
 class MasterViewController: NSViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
-    }
     @IBOutlet weak var keyPath: NSTextField!
     @IBOutlet weak var tokenTf: NSTextField!
     @IBOutlet weak var issTf: NSTextField!
@@ -22,10 +18,31 @@ class MasterViewController: NSViewController {
     @IBOutlet var bundleDsView: NSView!
     @IBOutlet var apiInfoTextView: NSTextView!
     @IBOutlet weak var urlTf: NSTextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do view setup here.
+        self.loadCache()
+    }
+    
+    fileprivate func loadCache() {
+        let userdefault = UserDefaults()
+        if let iss = userdefault.string(forKey: "iss") ,let kid = userdefault.string(forKey: "kid"){
+            self.issTf.stringValue = iss
+            self.kidTf.stringValue = kid
+        }
+    
+    }
+    
+    
     @IBAction func generateToken(_ sender: Any) {
         if keyPath.stringValue.count > 0, issTf.stringValue.count > 0 ,kidTf.stringValue.count > 0 {
             let jwphelp = JWTTokensHelp()
             self.tokenTf.stringValue = jwphelp.generate(path: keyPath.stringValue, iss: issTf.stringValue,kid: kidTf.stringValue)
+            let userdefault = UserDefaults()
+            userdefault.set(issTf.stringValue, forKey: "iss")
+            userdefault.set(kidTf.stringValue, forKey: "kid")
+            userdefault.synchronize()
         }
         else {
             let alert = NSAlert()

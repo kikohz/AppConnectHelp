@@ -11,16 +11,13 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
-    var masterView:MasterViewController?
+    var mainWindowC:MainWindowController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        self.masterView = MasterViewController(nibName: "MasterViewController", bundle: nil)
-        self.window.contentView?.addSubview(self.masterView!.view)
-        self.masterView?.view.frame = self.window.contentView!.bounds
-        self.masterView?.view.autoresizingMask = [.width,.height]
+        mainWindowC = MainWindowController(windowNibName: "MainWindowController")
+        mainWindowC?.window?.center()
+        mainWindowC?.window?.orderFront(nil)
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {

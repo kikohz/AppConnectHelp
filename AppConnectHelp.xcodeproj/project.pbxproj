@@ -10,13 +10,16 @@
 		AFCF40DF23C4B0B40014FD98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40DE23C4B0B40014FD98 /* AppDelegate.swift */; };
 		AFCF40E123C4B0B60014FD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCF40E023C4B0B60014FD98 /* Assets.xcassets */; };
 		AFCF40E423C4B0B60014FD98 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCF40E223C4B0B60014FD98 /* MainMenu.xib */; };
-		AFCF40ED23C4B23C0014FD98 /* JWTTokensHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40EC23C4B23C0014FD98 /* JWTTokensHelp.swift */; };
 		AFCF40F523C5B30A0014FD98 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40F323C5B30A0014FD98 /* MasterViewController.swift */; };
 		AFCF40F623C5B30A0014FD98 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCF40F423C5B30A0014FD98 /* MasterViewController.xib */; };
-		AFCF40F823C5E4750014FD98 /* ConnectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40F723C5E4750014FD98 /* ConnectAPI.swift */; };
 		AFCF40FB23C6CFF80014FD98 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40FA23C6CFF80014FD98 /* Extension.swift */; };
 		AFCF40FF23C8523B0014FD98 /* BundleIDsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40FD23C8523B0014FD98 /* BundleIDsViewController.swift */; };
 		AFCF410023C8523B0014FD98 /* BundleIDsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCF40FE23C8523B0014FD98 /* BundleIDsViewController.xib */; };
+		AFCF410223C866E50014FD98 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF410123C866E50014FD98 /* MainWindow.swift */; };
+		AFCF410523C8671F0014FD98 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF410323C8671F0014FD98 /* MainWindowController.swift */; };
+		AFCF410623C8671F0014FD98 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCF410423C8671F0014FD98 /* MainWindowController.xib */; };
+		AFCF410A23C86E200014FD98 /* ConnectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF410823C86E200014FD98 /* ConnectAPI.swift */; };
+		AFCF410B23C86E200014FD98 /* JWTTokensHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF410923C86E200014FD98 /* JWTTokensHelp.swift */; };
 		B4E4BCDAB66EDE2B9AB94C5E /* Pods_AppConnectHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA89AA81926A1A3946DBC4D4 /* Pods_AppConnectHelp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,13 +32,16 @@
 		AFCF40E323C4B0B60014FD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AFCF40E523C4B0B60014FD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCF40E623C4B0B60014FD98 /* AppConnectHelp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppConnectHelp.entitlements; sourceTree = "<group>"; };
-		AFCF40EC23C4B23C0014FD98 /* JWTTokensHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTTokensHelp.swift; sourceTree = "<group>"; };
 		AFCF40F323C5B30A0014FD98 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		AFCF40F423C5B30A0014FD98 /* MasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
-		AFCF40F723C5E4750014FD98 /* ConnectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAPI.swift; sourceTree = "<group>"; };
 		AFCF40FA23C6CFF80014FD98 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = AppConnectHelp/Extension.swift; sourceTree = SOURCE_ROOT; };
 		AFCF40FD23C8523B0014FD98 /* BundleIDsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BundleIDsViewController.swift; path = AppConnectHelp/BundleIDsViewController.swift; sourceTree = SOURCE_ROOT; };
 		AFCF40FE23C8523B0014FD98 /* BundleIDsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BundleIDsViewController.xib; path = AppConnectHelp/BundleIDsViewController.xib; sourceTree = SOURCE_ROOT; };
+		AFCF410123C866E50014FD98 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		AFCF410323C8671F0014FD98 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		AFCF410423C8671F0014FD98 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		AFCF410823C86E200014FD98 /* ConnectAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectAPI.swift; sourceTree = "<group>"; };
+		AFCF410923C86E200014FD98 /* JWTTokensHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTTokensHelp.swift; sourceTree = "<group>"; };
 		CA89AA81926A1A3946DBC4D4 /* Pods_AppConnectHelp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppConnectHelp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,7 @@
 		AFCF40DD23C4B0B40014FD98 /* AppConnectHelp */ = {
 			isa = PBXGroup;
 			children = (
+				AFCF410723C86DFF0014FD98 /* Service */,
 				AFCF40FC23C850C30014FD98 /* Provisioning */,
 				AFCF40F923C6CFD40014FD98 /* Extension */,
 				AFCF40F223C5B2F50014FD98 /* MasterView */,
@@ -97,8 +104,9 @@
 				AFCF40E223C4B0B60014FD98 /* MainMenu.xib */,
 				AFCF40E523C4B0B60014FD98 /* Info.plist */,
 				AFCF40E623C4B0B60014FD98 /* AppConnectHelp.entitlements */,
-				AFCF40EC23C4B23C0014FD98 /* JWTTokensHelp.swift */,
-				AFCF40F723C5E4750014FD98 /* ConnectAPI.swift */,
+				AFCF410123C866E50014FD98 /* MainWindow.swift */,
+				AFCF410323C8671F0014FD98 /* MainWindowController.swift */,
+				AFCF410423C8671F0014FD98 /* MainWindowController.xib */,
 			);
 			path = AppConnectHelp;
 			sourceTree = "<group>";
@@ -127,6 +135,15 @@
 				AFCF40FE23C8523B0014FD98 /* BundleIDsViewController.xib */,
 			);
 			path = Provisioning;
+			sourceTree = "<group>";
+		};
+		AFCF410723C86DFF0014FD98 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF410823C86E200014FD98 /* ConnectAPI.swift */,
+				AFCF410923C86E200014FD98 /* JWTTokensHelp.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +210,7 @@
 				AFCF410023C8523B0014FD98 /* BundleIDsViewController.xib in Resources */,
 				AFCF40E123C4B0B60014FD98 /* Assets.xcassets in Resources */,
 				AFCF40E423C4B0B60014FD98 /* MainMenu.xib in Resources */,
+				AFCF410623C8671F0014FD98 /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCF410B23C86E200014FD98 /* JWTTokensHelp.swift in Sources */,
 				AFCF40FB23C6CFF80014FD98 /* Extension.swift in Sources */,
-				AFCF40ED23C4B23C0014FD98 /* JWTTokensHelp.swift in Sources */,
 				AFCF40DF23C4B0B40014FD98 /* AppDelegate.swift in Sources */,
 				AFCF40F523C5B30A0014FD98 /* MasterViewController.swift in Sources */,
-				AFCF40F823C5E4750014FD98 /* ConnectAPI.swift in Sources */,
 				AFCF40FF23C8523B0014FD98 /* BundleIDsViewController.swift in Sources */,
+				AFCF410523C8671F0014FD98 /* MainWindowController.swift in Sources */,
+				AFCF410A23C86E200014FD98 /* ConnectAPI.swift in Sources */,
+				AFCF410223C866E50014FD98 /* MainWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
