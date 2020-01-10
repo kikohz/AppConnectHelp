@@ -19,6 +19,7 @@ class MasterViewController: NSViewController {
     @IBOutlet weak var issTf: NSTextField!
     @IBOutlet weak var kidTf: NSTextField!
     
+    @IBOutlet var bundleDsView: NSView!
     @IBOutlet var apiInfoTextView: NSTextView!
     @IBOutlet weak var urlTf: NSTextField!
     @IBAction func generateToken(_ sender: Any) {
@@ -66,6 +67,11 @@ class MasterViewController: NSViewController {
     }
     
     @IBAction func openApiView(_ sender: Any) {
+//        let view = NSView(frame: CGRect(x: 0, y: 0, width: 100, height: 200 ))
+//        self.view.addSubview(view)
+//        let bundleidsView = BundleIDsViewController(windowNibName: "BundleIDsViewController")
+//        bundleidsView.window?.orderFront(nil)
+//        NSApplication.shared.mainWindow?.orderOut(nil)
         
     }
     fileprivate func openFilePanel() {

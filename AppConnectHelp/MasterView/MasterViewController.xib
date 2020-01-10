@@ -8,6 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController" customModule="AppConnectHelp" customModuleProvider="target">
             <connections>
                 <outlet property="apiInfoTextView" destination="4bm-8g-1TI" id="LuX-TJ-6Af"/>
+                <outlet property="bundleDsView" destination="X40-G2-X1p" id="EpS-n5-OX1"/>
                 <outlet property="issTf" destination="Avc-f6-dj9" id="VcS-mP-qlE"/>
                 <outlet property="keyPath" destination="qQF-kI-9fH" id="MUc-Il-K4F"/>
                 <outlet property="kidTf" destination="sOy-cQ-iNl" id="Mli-D9-sPj"/>
@@ -166,7 +167,12 @@
                     </connections>
                 </button>
             </subviews>
-            <point key="canvasLocation" x="105" y="147"/>
+            <point key="canvasLocation" x="-190" y="-74"/>
+        </customView>
+        <customView id="X40-G2-X1p">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <point key="canvasLocation" x="334" y="-74"/>
         </customView>
     </objects>
     <resources>

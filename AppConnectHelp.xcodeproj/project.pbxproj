@@ -15,6 +15,8 @@
 		AFCF40F623C5B30A0014FD98 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCF40F423C5B30A0014FD98 /* MasterViewController.xib */; };
 		AFCF40F823C5E4750014FD98 /* ConnectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40F723C5E4750014FD98 /* ConnectAPI.swift */; };
 		AFCF40FB23C6CFF80014FD98 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40FA23C6CFF80014FD98 /* Extension.swift */; };
+		AFCF40FF23C8523B0014FD98 /* BundleIDsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF40FD23C8523B0014FD98 /* BundleIDsViewController.swift */; };
+		AFCF410023C8523B0014FD98 /* BundleIDsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFCF40FE23C8523B0014FD98 /* BundleIDsViewController.xib */; };
 		B4E4BCDAB66EDE2B9AB94C5E /* Pods_AppConnectHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA89AA81926A1A3946DBC4D4 /* Pods_AppConnectHelp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		AFCF40F423C5B30A0014FD98 /* MasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 		AFCF40F723C5E4750014FD98 /* ConnectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAPI.swift; sourceTree = "<group>"; };
 		AFCF40FA23C6CFF80014FD98 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = AppConnectHelp/Extension.swift; sourceTree = SOURCE_ROOT; };
+		AFCF40FD23C8523B0014FD98 /* BundleIDsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BundleIDsViewController.swift; path = AppConnectHelp/BundleIDsViewController.swift; sourceTree = SOURCE_ROOT; };
+		AFCF40FE23C8523B0014FD98 /* BundleIDsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BundleIDsViewController.xib; path = AppConnectHelp/BundleIDsViewController.xib; sourceTree = SOURCE_ROOT; };
 		CA89AA81926A1A3946DBC4D4 /* Pods_AppConnectHelp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppConnectHelp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 		AFCF40DD23C4B0B40014FD98 /* AppConnectHelp */ = {
 			isa = PBXGroup;
 			children = (
+				AFCF40FC23C850C30014FD98 /* Provisioning */,
 				AFCF40F923C6CFD40014FD98 /* Extension */,
 				AFCF40F223C5B2F50014FD98 /* MasterView */,
 				AFCF40DE23C4B0B40014FD98 /* AppDelegate.swift */,
@@ -113,6 +118,15 @@
 				AFCF40FA23C6CFF80014FD98 /* Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AFCF40FC23C850C30014FD98 /* Provisioning */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF40FD23C8523B0014FD98 /* BundleIDsViewController.swift */,
+				AFCF40FE23C8523B0014FD98 /* BundleIDsViewController.xib */,
+			);
+			path = Provisioning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFCF40F623C5B30A0014FD98 /* MasterViewController.xib in Resources */,
+				AFCF410023C8523B0014FD98 /* BundleIDsViewController.xib in Resources */,
 				AFCF40E123C4B0B60014FD98 /* Assets.xcassets in Resources */,
 				AFCF40E423C4B0B60014FD98 /* MainMenu.xib in Resources */,
 			);
@@ -235,6 +250,7 @@
 				AFCF40DF23C4B0B40014FD98 /* AppDelegate.swift in Sources */,
 				AFCF40F523C5B30A0014FD98 /* MasterViewController.swift in Sources */,
 				AFCF40F823C5E4750014FD98 /* ConnectAPI.swift in Sources */,
+				AFCF40FF23C8523B0014FD98 /* BundleIDsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
