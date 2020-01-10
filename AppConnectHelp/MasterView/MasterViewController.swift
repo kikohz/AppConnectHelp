@@ -84,6 +84,8 @@ class MasterViewController: NSViewController {
     }
     
     @IBAction func openApiView(_ sender: Any) {
+        let delegate:AppDelegate = NSApplication.shared.delegate as! AppDelegate
+        delegate.mainWindowC?.openBundleidsView()
 //        let view = NSView(frame: CGRect(x: 0, y: 0, width: 100, height: 200 ))
 //        self.view.addSubview(view)
 //        let bundleidsView = BundleIDsViewController(windowNibName: "BundleIDsViewController")
